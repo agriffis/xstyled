@@ -208,3 +208,45 @@ function flattenDown(array: any[], result: any[]) {
 export function flatten(array: any[]) {
   return flattenDown(array, [])
 }
+
+function assertCompatibleFlags(f1: string, f2: string) {
+  ;['i', 'm', 's', 'u'].forEach((flag) => {
+    if (f1.includes(flag) !== f2.includes(flag)) {
+      throw new Error(`incompatible regex flags: ${f1} vs ${f2}`)
+    }
+  })
+}
+
+/**
+ * Make a RegExp from a tagged template literal, with support for the x flag
+ * (whitespace and comments) and interpolation of other RegExps.
+ * @param flags and/or template literal
+ */
+export function trex(flags: string = '', ...args: Array<any>): Function {
+  if (Array.isArray(flags)) {
+    // trex called without flags, i.e. trex`pattern`
+    return trex()(flags, ...args)
+  }
+  // @ts-ignore
+  return (strings, ...values): RegExp => {
+    let patt = strings.raw[0]
+    values.forEach((v, i) => {
+      if (v === null || v === undefined) {
+        v = ''
+      } else if (v.source !== undefined) {
+        // interpolate another RegExp
+        assertCompatibleFlags(flags, v.flags)
+        v = v.source
+      }
+      patt += v + strings.raw[i + 1]
+    })
+    if (flags.includes('x')) {
+      // remove comments
+      patt = patt.replace(/\s#.*/g, '')
+      // remove whitespace except backslash-escaped
+      patt = patt.replace(/(?:(\\.)|\s)/gs, '$1')
+      flags = flags.replace(/x/g, '')
+    }
+    return new RegExp(patt, flags)
+  }
+}
