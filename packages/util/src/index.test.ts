@@ -12,6 +12,7 @@ import {
   cascade,
   getThemeValue,
   omit,
+  trex,
 } from '.'
 
 describe('util', () => {
@@ -160,6 +161,40 @@ describe('util', () => {
   describe('#omit', () => {
     it('omits values', () => {
       expect(omit({ a: 'x', b: 'y' }, ['b'])).toEqual({ a: 'x' })
+    })
+  })
+
+  describe('#trex', () => {
+    it('makes a regexp', () => {
+      const r = trex`foo\sbar`
+      expect(r).toBeInstanceOf(RegExp)
+      expect(r.source).toEqual(/foo\sbar/.source)
+      expect(r.flags).toEqual('')
+    })
+
+    it('handles flags', () => {
+      const r = trex('gs')``
+      expect(r.flags).toEqual('gs')
+    })
+
+    it('handles the x flag', () => {
+      const r = trex('gx')`
+        ^ ab  # this is a comment
+        c d$
+        `
+      expect(r.source).toEqual('^abcd$')
+      expect(r.flags).toEqual('g')
+    })
+
+    it("doesn't need extra backslashes", () => {
+      const r1 = trex`foo\sbar`
+      const r2 = new RegExp('foo\\sbar')
+      expect(r1.source).toEqual(r2.source)
+    })
+
+    it('interpolates strings and regexes', () => {
+      const r = trex`${'foo\\sfoo'}${/bar\sbaz/}`
+      expect(r.source).toEqual('foo\\sfoobar\\sbaz')
     })
   })
 })

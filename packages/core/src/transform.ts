@@ -1,8 +1,18 @@
 /* eslint-disable no-continue, no-loop-func, no-cond-assign */
+import { trex } from '@xstyled/util'
 import { propGetters } from './propGetters'
 
-const PROP_REGEXP = /(\s*)([^&{}:;\n]+):\s*([^&{}:;\n]+)(\s*);/g
-const IMPORTANT_REGEXP = /\s*!important\s*/
+const PROP_REGEXP = trex('gx')`
+  (\s*)              # leading whitespace
+  ([^&{}:;\n]+)      # property name
+  :\s*               # colon, whitespace
+  ([^&{}:;\n]+)      # property value
+  (\s*);             # trailing whitespace, semicolon
+`
+
+const IMPORTANT_REGEXP = trex('x')`
+  \s*!important\s*   # important flag, surrounding whitespace
+`
 
 export function transform(rawValue: any) {
   if (typeof rawValue !== 'string') return rawValue
