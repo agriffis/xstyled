@@ -2,16 +2,19 @@
 import { trex } from '@xstyled/util'
 import { propGetters } from './propGetters'
 
-const PROP_REGEXP = trex('gx')`
-  (\s*)              # leading whitespace
-  ([^&{}:;\n]+)      # property name
-  :\s*               # colon, whitespace
-  ([^&{}:;\n]+)      # property value
-  (\s*);             # trailing whitespace, semicolon
-`
+// prop name is an ident: word chars, underscore and dash.
+const PROP_CHAR = trex('s')`[-\w]`
 
-const IMPORTANT_REGEXP = trex('x')`
-  \s*!important\s*   # important flag, surrounding whitespace
+// prop value consists of non-semis unless backslash-escaped.
+const VALUE_CHAR = trex('s')`(?:\\.|[^\\;])`
+
+const PROP_REGEXP = trex('gsx')`
+  (${PROP_CHAR}+)    # capture prop name
+  (\s*:\s*)          # colon & whitespace
+  (?=\S)             # prop value starts with non-whitespace
+  (${VALUE_CHAR}*?)  # capture prop value (non-greedy)
+  (\s*!important)?   # capture !important
+  (\s*;)             # semi & whitespace
 `
 
 export function transform(rawValue: any) {
@@ -20,17 +23,12 @@ export function transform(rawValue: any) {
   let lastIndex = 0
   const values = []
   while ((matches = PROP_REGEXP.exec(rawValue))) {
-    const [, start, prop, propValue, end] = matches
+    const [, prop, colon, value, imp, semi] = matches
     const getter = (propGetters as any)[prop]
     if (getter) {
-      const hasImportant = IMPORTANT_REGEXP.test(propValue)
-      const cleanValue = propValue.replace(IMPORTANT_REGEXP, '')
       values.push(rawValue.slice(lastIndex, matches.index))
       values.push(
-        (p: object) =>
-          `${start}${prop}: ${getter(cleanValue)(p)}${
-            hasImportant ? ' !important' : ''
-          };${end}`,
+        (p: object) => `${prop}${colon}${getter(value)(p)}${imp || ''}${semi}`,
       )
       lastIndex = matches.index + matches[0].length
     }
