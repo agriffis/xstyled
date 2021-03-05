@@ -13,6 +13,7 @@
   "main": "dist/index.js",
   "module": "dist/styled-components.esm.js",
   "typings": "dist/index.d.ts",
+  "files": ["dist", "macro"],
   "author": "Greg Bergé <berge.greg@gmail.com>",
   "license": "MIT",
   "scripts": {
