@@ -1,7 +1,7 @@
 {
   "name": "@agriffis/xstyled-system",
   "description": "xstyled system utilities.",
-  "version": "3.1.2",
+  "version": "3.1.3-agriffis.0",
   "keywords": [
     "emotion",
     "styled-components",
@@ -31,7 +31,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@agriffis/xstyled-util": "^3.1.0",
+    "@agriffis/xstyled-util": "^3.1.3-agriffis.0",
     "csstype": "^3.0.8"
   }
 }
