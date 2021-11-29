@@ -88,7 +88,7 @@ import CustomizeTransitions from '../../../partials/customizing/transitions.mdx'
 Using xstyled's `styled`, all transitions defined are automatically bound to `transition` attribute:
 
 ```js
-import styled from '@xstyled/...'
+import styled from '@agriffis/xstyled-...'
 
 const Button = styled.button`
   transition: default;
@@ -103,7 +103,7 @@ It is possible to manually bind a transition using `th.transition` utility:
 
 ```js
 import styled from '...'
-import { th } from '@xstyled/...'
+import { th } from '@agriffis/xstyled-...'
 
 const Button = styled.button`
   transition: ${th.transition('default')};
@@ -115,7 +115,7 @@ const Button = styled.button`
 Get a transition in any component using `useTransition` hook:
 
 ```js
-import { useTransition } from '@xstyled/...'
+import { useTransition } from '@agriffis/xstyled-...'
 
 function Button() {
   const transition = useTransition('default')

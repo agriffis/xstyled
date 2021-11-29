@@ -5,7 +5,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [3.1.2](https://github.com/gregberge/xstyled/compare/v3.1.1...v3.1.2) (2021-11-05)
 
-**Note:** Version bump only for package @xstyled/benchmarks
+**Note:** Version bump only for package @agriffis/xstyled-benchmarks
 
 
 
@@ -13,7 +13,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [3.1.1](https://github.com/gregberge/xstyled/compare/v3.1.0...v3.1.1) (2021-10-30)
 
-**Note:** Version bump only for package @xstyled/benchmarks
+**Note:** Version bump only for package @agriffis/xstyled-benchmarks
 
 
 
@@ -21,7 +21,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.1.0](https://github.com/gregberge/xstyled/compare/v3.0.3...v3.1.0) (2021-10-02)
 
-**Note:** Version bump only for package @xstyled/benchmarks
+**Note:** Version bump only for package @agriffis/xstyled-benchmarks
 
 
 
@@ -29,7 +29,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [3.0.3](https://github.com/gregberge/xstyled/compare/v3.0.2...v3.0.3) (2021-06-25)
 
-**Note:** Version bump only for package @xstyled/benchmarks
+**Note:** Version bump only for package @agriffis/xstyled-benchmarks
 
 
 
@@ -37,7 +37,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [3.0.2](https://github.com/gregberge/xstyled/compare/v3.0.1...v3.0.2) (2021-06-18)
 
-**Note:** Version bump only for package @xstyled/benchmarks
+**Note:** Version bump only for package @agriffis/xstyled-benchmarks
 
 
 
@@ -45,7 +45,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [2.5.0](https://github.com/gregberge/xstyled/compare/v2.4.1...v2.5.0) (2021-05-02)
 
-**Note:** Version bump only for package @xstyled/benchmarks
+**Note:** Version bump only for package @agriffis/xstyled-benchmarks
 
 
 
@@ -53,7 +53,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [2.4.1](https://github.com/gregberge/xstyled/compare/v2.4.0...v2.4.1) (2021-03-29)
 
-**Note:** Version bump only for package @xstyled/benchmarks
+**Note:** Version bump only for package @agriffis/xstyled-benchmarks
 
 
 
@@ -61,7 +61,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [2.4.0](https://github.com/gregberge/xstyled/compare/v2.3.0...v2.4.0) (2021-03-28)
 
-**Note:** Version bump only for package @xstyled/benchmarks
+**Note:** Version bump only for package @agriffis/xstyled-benchmarks
 
 
 

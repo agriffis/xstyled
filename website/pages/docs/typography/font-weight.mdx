@@ -91,7 +91,7 @@ import CustomizeFontWeights from '../../../partials/customizing/font-weights.mdx
 Using xstyled's `styled`, all font weights defined are automatically bound to `font-weight` attribute:
 
 ```js
-import styled from '@xstyled/...'
+import styled from '@agriffis/xstyled-...'
 
 const Title = styled.h4`
   font-weight: semibold;
@@ -106,7 +106,7 @@ It is possible to manually bind a font size using `th.fontWeight` utility:
 
 ```js
 import styled from '...'
-import { th } from '@xstyled/system'
+import { th } from '@agriffis/xstyled-system'
 
 const Title = styled.h4`
   font: ${th.fontWeight('semibold')};
@@ -118,7 +118,7 @@ const Title = styled.h4`
 Get a font size in any component using `useFontWeight` hook:
 
 ```js
-import { useFontWeight } from '@xstyled/...'
+import { useFontWeight } from '@agriffis/xstyled-...'
 
 function Title() {
   const fontWeight = useFontWeight('semibold')

@@ -1,5 +1,5 @@
 {
-  "name": "@xstyled/benchmarks",
+  "name": "@agriffis/xstyled-benchmarks",
   "version": "3.1.2",
   "private": true,
   "scripts": {
@@ -26,8 +26,8 @@
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
-    "@xstyled/emotion": "^3.1.2",
-    "@xstyled/styled-components": "^3.1.2",
+    "@agriffis/xstyled-emotion": "^3.1.2",
+    "@agriffis/xstyled-styled-components": "^3.1.2",
     "emotion-theming": "^11.0.0",
     "styled-components": "^5.3.0",
     "styled-system": "^5.1.5"

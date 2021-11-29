@@ -114,7 +114,7 @@ import CustomizeDurations from '../../../partials/customizing/durations.mdx'
 Using xstyled's `styled`, all transition properties defined are automatically bound to `transition-property` attribute:
 
 ```js
-import styled from '@xstyled/...'
+import styled from '@agriffis/xstyled-...'
 
 const Button = styled.button`
   transition-duration: fast-in;
@@ -129,7 +129,7 @@ It is possible to manually bind a transition property using `th.duration` utilit
 
 ```js
 import styled from '...'
-import { th } from '@xstyled/...'
+import { th } from '@agriffis/xstyled-...'
 
 const Switch = styled.radio`
   transition: opacity ${th.duration('instant')};
@@ -141,7 +141,7 @@ const Switch = styled.radio`
 Get a transition property in any component using `useDuration` hook:
 
 ```js
-import { useDuration } from '@xstyled/...'
+import { useDuration } from '@agriffis/xstyled-...'
 
 function Button() {
   const duration = useDuration('fast-out')

@@ -144,7 +144,7 @@ To start an xstyled project, it is heavily recommended to use the `defaultTheme`
 For example, if you wanted to add an extra breakpoint but preserve the existing ones, you could extend the `screens` property:
 
 ```js
-import { defaultTheme, ThemeProvider } from '@xstyled/styled-components'
+import { defaultTheme, ThemeProvider } from '@agriffis/xstyled-styled-components'
 
 export const theme = {
   ...defaultTheme,
@@ -161,7 +161,7 @@ export const theme = {
 To override `defaultTheme`, do not spread default theme properties.
 
 ```js
-import { defaultTheme, ThemeProvider } from '@xstyled/styled-components'
+import { defaultTheme, ThemeProvider } from '@agriffis/xstyled-styled-components'
 
 export const theme = {
   ...defaultTheme,
@@ -178,7 +178,7 @@ export const theme = {
 You can refer other values using `th.*` utility.
 
 ```js
-import { th, defaultTheme, ThemeProvider } from '@xstyled/styled-components'
+import { th, defaultTheme, ThemeProvider } from '@agriffis/xstyled-styled-components'
 
 export const theme = {
   ...defaultTheme,
@@ -193,7 +193,7 @@ export const theme = {
 It works recursively, so you can use several level of design tokens:
 
 ```js
-import { th, defaultTheme, ThemeProvider } from '@xstyled/styled-components'
+import { th, defaultTheme, ThemeProvider } from '@agriffis/xstyled-styled-components'
 
 export const theme = {
   ...defaultTheme,
@@ -212,7 +212,7 @@ Some `keys` are used by xstyled, but it does not mean you can't specify others.
 For example if you create a custom filter utility, or if you use it by your own, you can add a `filters` section:
 
 ```js
-import { defaultTheme, ThemeProvider } from '@xstyled/styled-components'
+import { defaultTheme, ThemeProvider } from '@agriffis/xstyled-styled-components'
 
 export const theme = {
   ...defaultTheme,

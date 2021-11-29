@@ -21,7 +21,7 @@ xstyled solves this problem by automatically transforming your `px` into `rem`. 
 To use `rem` instead of `px`, configure transformers in your theme. All unitless properties will be transformed into `rem` instead of `px`.
 
 ```js
-import styled, { x, ThemeProvider, rpxTransformers } from '@xstyled/...'
+import styled, { x, ThemeProvider, rpxTransformers } from '@agriffis/xstyled-...'
 
 const theme = {
   transformers: {
@@ -64,7 +64,7 @@ export const theme = {
 All theme getters are configurable through transformers. You can for example write a transformers that transforms colors on the fly.
 
 ```js
-import styled, { ThemeProvider } from '@xstyled/styled-components'
+import styled, { ThemeProvider } from '@agriffis/xstyled-styled-components'
 import { lighten } from 'polished'
 
 const theme = {

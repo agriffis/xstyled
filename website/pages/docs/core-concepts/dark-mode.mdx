@@ -47,7 +47,7 @@ After your theme and color modes are ready, you have to add a `ColorModeProvider
 
 ```js
 import React from 'react'
-import { ThemeProvider, ColorModeProvider } from '@xstyled/styled-components'
+import { ThemeProvider, ColorModeProvider } from '@agriffis/xstyled-styled-components'
 import App from './App'
 
 const theme = {
@@ -96,7 +96,7 @@ Use the `useColorMode` hook in your application to change the color mode. This v
 
 ```js
 import React from 'react'
-import { useColorMode } from '@xstyled/styled-components'
+import { useColorMode } from '@agriffis/xstyled-styled-components'
 
 function Example(props) {
   const [colorMode, setColorMode] = useColorMode()
@@ -120,7 +120,7 @@ To use it with [Gatsby](https://gatsbyjs.org), add the following code to `gatsby
 
 ```js
 import React from 'react'
-import { getColorModeInitScriptElement } from '@xstyled/styled-components'
+import { getColorModeInitScriptElement } from '@agriffis/xstyled-styled-components'
 
 export function onRenderBody({ setPreBodyComponents }) {
   setPreBodyComponents([getColorModeInitScriptElement()])
@@ -134,7 +134,7 @@ To use it with [Next](https://nextjs.org/), create a `_document.js`:
 ```js
 import React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { getColorModeInitScriptElement } from '@xstyled/styled-components'
+import { getColorModeInitScriptElement } from '@agriffis/xstyled-styled-components'
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -268,7 +268,7 @@ To make color mode works, a class is added to `document.body`. Sometimes you may
 
 ```js
 import React from 'react'
-import { ThemeProvider, ColorModeProvider } from '@xstyled/styled-components'
+import { ThemeProvider, ColorModeProvider } from '@agriffis/xstyled-styled-components'
 import App from './App'
 
 const target = document.getElementById('small-react-app')

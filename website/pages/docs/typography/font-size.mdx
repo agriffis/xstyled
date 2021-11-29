@@ -103,7 +103,7 @@ import CustomizeFontSizes from '../../../partials/customizing/font-sizes.mdx'
 Using xstyled's `styled`, all font sizes defined are automatically bound to `font-size` attribute:
 
 ```js
-import styled from '@xstyled/...'
+import styled from '@agriffis/xstyled-...'
 
 const Title = styled.h4`
   font-size: 2xl;
@@ -118,7 +118,7 @@ It is possible to manually bind a font size using `th.fontSize` utility:
 
 ```js
 import styled from '...'
-import { th } from '@xstyled/...'
+import { th } from '@agriffis/xstyled-...'
 
 const Title = styled.h4`
   font: ${th.fontSize('xl')};
@@ -130,7 +130,7 @@ const Title = styled.h4`
 Get a font size in any component using `useFontSize` hook:
 
 ```js
-import { useFontSize } from '@xstyled/...'
+import { useFontSize } from '@agriffis/xstyled-...'
 
 function Title() {
   const fontSize = useFontSize('xl')

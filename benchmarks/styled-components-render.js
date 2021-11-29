@@ -1,7 +1,7 @@
 /* eslint-disable no-console, import/no-unresolved */
 const React = require('react')
 const Benchmark = require('benchmark')
-const xstyled = require('@xstyled/styled-components')
+const xstyled = require('@agriffis/xstyled-styled-components')
 const styled = require('styled-components')
 
 const suite = new Benchmark.Suite('styled')
@@ -45,7 +45,7 @@ function runStyled() {
 
 suite
   .add('styled-components', runStyled)
-  .add('@xstyled/styled-components', runXstyled)
+  .add('@agriffis/xstyled-styled-components', runXstyled)
   .on('cycle', (event) => {
     console.log(String(event.target))
   })

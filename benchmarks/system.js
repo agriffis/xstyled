@@ -1,6 +1,6 @@
 /* eslint-disable no-console, import/no-unresolved */
 const Benchmark = require('benchmark')
-const xsys = require('@xstyled/system')
+const xsys = require('@agriffis/xstyled-system')
 const sys = require('styled-system')
 
 // Benchmark.options.maxTime = 0.2
@@ -31,7 +31,7 @@ console.log('xsys', runXsys())
 console.log('sys', runSys())
 
 suite
-  .add('@xstyled/system', runXsys)
+  .add('@agriffis/xstyled-system', runXsys)
   .add('styled-system', runSys)
   .on('cycle', (event) => {
     console.log(String(event.target))

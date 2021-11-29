@@ -23,18 +23,18 @@ You may have to configure styled-components or Emotion, especially if you use a 
 
 // import original module declarations
 import 'styled-components'
-import '@xstyled/system'
+import '@agriffis/xstyled-system'
 import {
   ITheme,
   DefaultTheme as XStyledDefaultTheme,
-} from '@xstyled/styled-components'
+} from '@agriffis/xstyled-styled-components'
 
 interface AppTheme extends ITheme, XStyledDefaultTheme {
   /* Customize your theme */
 }
 
 // and extend them!
-declare module '@xstyled/system' {
+declare module '@agriffis/xstyled-system' {
   export interface Theme extends AppTheme {}
 }
 declare module 'styled-components' {
@@ -52,16 +52,16 @@ Read [styled-components TypeScript guide](https://styled-components.com/docs/api
 // styled.d.ts
 
 // import original module declarations
-import '@xstyled/system'
+import '@agriffis/xstyled-system'
 import '@emotion/react'
-import { ITheme, DefaultTheme as XStyledDefaultTheme } from '@xstyled/emotion'
+import { ITheme, DefaultTheme as XStyledDefaultTheme } from '@agriffis/xstyled-emotion'
 
 interface AppTheme extends ITheme, XStyledDefaultTheme {
   /* Customize your theme */
 }
 
 // and extend them!
-declare module '@xstyled/system' {
+declare module '@agriffis/xstyled-system' {
   export interface Theme extends AppTheme {}
 }
 declare module '@emotion/react' {

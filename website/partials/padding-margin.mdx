@@ -5,7 +5,7 @@
 Using xstyled's `styled`, all spacing scales defined are automatically bound to all margins, paddings and gap attributes:
 
 ```js
-import styled from '@xstyled/...'
+import styled from '@agriffis/xstyled-...'
 
 const Card = styled.button`
   margin: 3;
@@ -20,7 +20,7 @@ It is possible to manually bind a spacing scale using `th.space` utility:
 
 ```js
 import styled from '...'
-import { th } from '@xstyled/...'
+import { th } from '@agriffis/xstyled-...'
 
 const Card = styled.button`
   margin: calc(2px + ${th.space(3)});
@@ -32,7 +32,7 @@ const Card = styled.button`
 Get a spacing scale in any component using `useSpace` hook:
 
 ```js
-import { useSpace } from '@xstyled/...'
+import { useSpace } from '@agriffis/xstyled-...'
 
 function Card() {
   const space = useSpace(3)

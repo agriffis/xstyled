@@ -18,7 +18,7 @@ By default the `x` namespace exposed in xstyled has all utilities built-in. Some
 You can't modify the `x` namespace but you can easily create your own namespace using `createX`. It allows you to create a namespace from an utility:
 
 ```js
-import { createX, fontSize } from '@xstyled/...'
+import { createX, fontSize } from '@agriffis/xstyled-...'
 import { borderInline } from './border-inline'
 
 const x = createX(fontSize)
@@ -32,7 +32,7 @@ const x = createX(fontSize)
 Compose utilities using `compose` method.
 
 ```js
-import { createX, compose, fontSize, fontWeight } from '@xstyled/...'
+import { createX, compose, fontSize, fontWeight } from '@agriffis/xstyled-...'
 import { borderInline } from './border-inline'
 
 const x = createX(compose(fontSize, fontWeight))
@@ -46,7 +46,7 @@ const x = createX(compose(fontSize, fontWeight))
 To make it easier, utilities are organized in groups, for example `typography` groups all utilities relative to text edition:
 
 ```js
-import { createX, typography } from '@xstyled/...'
+import { createX, typography } from '@agriffis/xstyled-...'
 import { borderInline } from './border-inline'
 
 const x = createX(typography)

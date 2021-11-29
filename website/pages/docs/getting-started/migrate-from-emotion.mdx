@@ -51,7 +51,7 @@ const Button = ({ children }) => {
 **Using xstyled**
 
 ```jsx
-import { x } from '@xstyled/emotion'
+import { x } from '@agriffis/xstyled-emotion'
 
 const Button = ({ children }) => (
   <x.button
@@ -118,7 +118,7 @@ const Button = ({ children }) => {
 
 ```js
 /** @jsx jsx */
-import { jsx } from '@xstyled/emotion'
+import { jsx } from '@agriffis/xstyled-emotion'
 
 const Button = ({ children }) => {
   return (
@@ -169,7 +169,7 @@ const Button = ({ children }) => {
 **Using xstyled**
 
 ```jsx
-import { x } from '@xstyled/emotion'
+import { x } from '@agriffis/xstyled-emotion'
 
 const Button = ({ children }) => {
   return <x.button w={{ _: 200, md: 300 }}>{children}</x.button>
@@ -178,17 +178,17 @@ const Button = ({ children }) => {
 
 ## Replacing Emotion by xstyled
 
-`@xstyled/emotion` is a replacement of `@emotion/react` and `@emotion/styled`. You can safely replace `@emotion/react` and `@emotion/styled` by `@xstyled/emotion`.
+`@agriffis/xstyled-emotion` is a replacement of `@emotion/react` and `@emotion/styled`. You can safely replace `@emotion/react` and `@emotion/styled` by `@agriffis/xstyled-emotion`.
 
 Once your code is using xstyled, you can start using [declarative components (`x.*`)](/docs/declarative-components/) and [enhanced styled components (`styled.*`)](/docs/styled-components/).
 
 ### JSX Pragma
 
-JSX Pragma is exposed in `@xstyled/emotion`:
+JSX Pragma is exposed in `@agriffis/xstyled-emotion`:
 
 ```js
 /** @jsx jsx */
-import { jsx } from '@xstyled/emotion'
+import { jsx } from '@agriffis/xstyled-emotion'
 
 const Button = ({ children }) => {
   return (
@@ -207,13 +207,13 @@ const Button = ({ children }) => {
 
 ### Babel preset
 
-To avoid the `/** @jsx jsx */` you can use `@xstyled/babel-preset-emotion-css-prop`. It has the same interface as `@emotion/babel-preset-css-prop`, see [Emotion documentation](https://emotion.sh/docs/css-prop#babel-preset).
+To avoid the `/** @jsx jsx */` you can use `@agriffis/xstyled-babel-preset-emotion-css-prop`. It has the same interface as `@emotion/babel-preset-css-prop`, see [Emotion documentation](https://emotion.sh/docs/css-prop#babel-preset).
 
 **.babelrc**
 
 ```js
 {
-  "presets": ["@xstyled/babel-preset-emotion-css-prop"]
+  "presets": ["@agriffis/xstyled-babel-preset-emotion-css-prop"]
 }
 ```
 
@@ -228,7 +228,7 @@ You may want to use [Emotion Babel plugin](https://emotion.sh/docs/babel) for mi
   ...,
   "presets": [
     [
-      "@xstyled/babel-preset-emotion-css-prop",
+      "@agriffis/xstyled-babel-preset-emotion-css-prop",
       {
         // @emotion/babel-plugin options
         // https://emotion.sh/docs/@emotion/babel-plugin
@@ -244,7 +244,7 @@ Note: `importMap` has some known issues coming from Emotion side
 
 ### Difference in `css` prop usage
 
-`css` prop with `@xstyled/emotion` is slightly different from `css` prop with `@emotion/react`.
+`css` prop with `@agriffis/xstyled-emotion` is slightly different from `css` prop with `@emotion/react`.
 
 - `theme` is accessible as a destructured object `{ theme }`
 - When using a function, you have to wrap your style in `css`
@@ -272,7 +272,7 @@ const Button = ({ children }) => {
 
 ```jsx
 /** @jsx jsx */
-import { jsx } from '@xstyled/emotion'
+import { jsx } from '@agriffis/xstyled-emotion'
 
 const Button = ({ children }) => {
   return (

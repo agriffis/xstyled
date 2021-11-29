@@ -3,7 +3,7 @@
 ### Install xstyled
 
 ```
-npm install styled-components @xstyled/styled-components
+npm install styled-components @agriffis/xstyled-styled-components
 ```
 
 ### Setup `theme` and `Preflight`
@@ -14,7 +14,7 @@ import {
   defaultTheme,
   ThemeProvider,
   Preflight,
-} from '@xstyled/styled-components'
+} from '@agriffis/xstyled-styled-components'
 
 const theme = {
   ...defaultTheme,
@@ -34,7 +34,7 @@ export default function App() {
 ### Write your first component
 
 ```js
-import { x } from '@xstyled/styled-components'
+import { x } from '@agriffis/xstyled-styled-components'
 
 function Button(props) {
   return <x.button bg="blue-500" {...props} />

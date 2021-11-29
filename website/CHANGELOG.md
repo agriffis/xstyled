@@ -22,7 +22,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [3.0.2](https://github.com/gregberge/xstyled/compare/v3.0.1...v3.0.2) (2021-06-18)
 
-**Note:** Version bump only for package @xstyled/website
+**Note:** Version bump only for package @agriffis/xstyled-website
 
 
 
@@ -30,7 +30,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [2.5.0](https://github.com/gregberge/xstyled/compare/v2.4.1...v2.5.0) (2021-05-02)
 
-**Note:** Version bump only for package @xstyled/website
+**Note:** Version bump only for package @agriffis/xstyled-website
 
 
 
@@ -63,7 +63,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [2.2.3](https://github.com/gregberge/xstyled/compare/v2.2.2...v2.2.3) (2021-02-13)
 
-**Note:** Version bump only for package @xstyled/website
+**Note:** Version bump only for package @agriffis/xstyled-website
 
 
 
@@ -93,7 +93,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [2.2.0](https://github.com/gregberge/xstyled/compare/v2.1.0...v2.2.0) (2021-01-18)
 
-**Note:** Version bump only for package @xstyled/website
+**Note:** Version bump only for package @agriffis/xstyled-website
 
 
 

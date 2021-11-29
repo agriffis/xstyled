@@ -20,7 +20,7 @@ If you already use styled-components on your project, then you should read [Migr
 ### Install styled-components and xstyled via npm
 
 ```
-npm install styled-components @xstyled/styled-components
+npm install styled-components @agriffis/xstyled-styled-components
 ```
 
 ### Setup `theme` and `Preflight`
@@ -31,7 +31,7 @@ import {
   defaultTheme,
   ThemeProvider,
   Preflight,
-} from '@xstyled/styled-components'
+} from '@agriffis/xstyled-styled-components'
 
 const theme = {
   ...defaultTheme,
@@ -51,7 +51,7 @@ export default function App() {
 ### Write your first component
 
 ```js
-import { x } from '@xstyled/styled-components'
+import { x } from '@agriffis/xstyled-styled-components'
 
 function Button(props) {
   return <x.button bg="blue-500" {...props} />
@@ -67,14 +67,14 @@ If you already use Emotion on your project, then you should read [Migrate from E
 ### Install emotion and xstyled via npm
 
 ```
-npm install @emotion/react @emotion/styled @xstyled/emotion
+npm install @emotion/react @emotion/styled @agriffis/xstyled-emotion
 ```
 
 ### Setup `theme` and `Preflight`
 
 ```js
 // App.js
-import { defaultTheme, ThemeProvider, Preflight } from '@xstyled/emotion'
+import { defaultTheme, ThemeProvider, Preflight } from '@agriffis/xstyled-emotion'
 
 const theme = {
   ...defaultTheme,
@@ -94,7 +94,7 @@ export default function App() {
 ### Write your first component
 
 ```js
-import { x } from '@xstyled/emotion'
+import { x } from '@agriffis/xstyled-emotion'
 
 function Button(props) {
   return <x.button bg="blue-500" {...props} />

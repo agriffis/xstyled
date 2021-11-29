@@ -46,7 +46,7 @@ const Button = styled.button`
 **Using xstyled**
 
 ```jsx
-import { x } from '@xstyled/styled-components'
+import { x } from '@agriffis/xstyled-styled-components'
 
 const Button = (props) => (
   <x.button
@@ -104,7 +104,7 @@ const Button = styled.button`
 **Using xstyled**
 
 ```js
-import styled from '@xstyled/styled-components'
+import styled from '@agriffis/xstyled-styled-components'
 
 const Button = styled.button`
   padding-top: 2;
@@ -151,7 +151,7 @@ const Button = styled.div`
 **Using xstyled's `x.*`**
 
 ```js
-import { x } from '@xstyled/emotion'
+import { x } from '@agriffis/xstyled-emotion'
 
 const Button = ({ children }) => {
   return <x.button w={{ _: 200, md: 300 }}>{children}</x.button>
@@ -161,7 +161,7 @@ const Button = ({ children }) => {
 **Using xstyled's `styled.*`**
 
 ```js
-import styled from '@xstyled/styled-components'
+import styled from '@agriffis/xstyled-styled-components'
 
 const Button = styled.div`
   width: 200;
@@ -174,7 +174,7 @@ const Button = styled.div`
 
 ## Replacing styled-components by xstyled
 
-`@xstyled/styled-components` is a drop-in replacement for `styled-components`. You can safely replace `styled-components` by `@xstyled/styled-components`.
+`@agriffis/xstyled-styled-components` is a drop-in replacement for `styled-components`. You can safely replace `styled-components` by `@agriffis/xstyled-styled-components`.
 
 Once your code is using xstyled, you can start using [declarative components (`x.*`)](/docs/declarative-components/) and [enhanced styled components (`styled.*`)](/docs/styled-components/).
 
@@ -213,10 +213,10 @@ You can use it out of the box, but you have to specify xstyled as `topLevelImpor
       "babel-plugin-styled-components",
       {
         "topLevelImportPaths": [
-          "@xstyled/styled-components",
-          "@xstyled/styled-components/no-tags",
-          "@xstyled/styled-components/native",
-          "@xstyled/styled-components/primitives"
+          "@agriffis/xstyled-styled-components",
+          "@agriffis/xstyled-styled-components/no-tags",
+          "@agriffis/xstyled-styled-components/native",
+          "@agriffis/xstyled-styled-components/primitives"
         ],
       }
     ]
@@ -236,7 +236,7 @@ module.exports = {
   // ...
   // Other macros config
   styledComponents: {
-    importModuleName: '@xstyled/styled-components',
+    importModuleName: '@agriffis/xstyled-styled-components',
   },
 }
 ```

@@ -312,7 +312,7 @@ const defaultTheme = {
 Using xstyled's `styled`, all animations defined are automatically bound to `animation` attribute:
 
 ```js
-import styled from '@xstyled/...'
+import styled from '@agriffis/xstyled-...'
 
 const Button = styled.button`
   animation: ping;
@@ -327,7 +327,7 @@ It is possible to manually bind a animation property using `th.animation` utilit
 
 ```js
 import styled from '...'
-import { th } from '@xstyled/...'
+import { th } from '@agriffis/xstyled-...'
 
 const Button = styled.button`
   animation: ${th.animation('ping')};
@@ -339,7 +339,7 @@ const Button = styled.button`
 Get a animation property in any component using `useAnimation` hook:
 
 ```js
-import { useAnimation } from '@xstyled/...'
+import { useAnimation } from '@agriffis/xstyled-...'
 
 function Button() {
   const animation = useAnimation('ping')

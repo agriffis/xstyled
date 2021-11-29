@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from '@xstyled/emotion'
+import styled from '@agriffis/xstyled-emotion'
 
 const Table = styled('div')`
   display: table;

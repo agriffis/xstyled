@@ -76,7 +76,7 @@ import CustomizeTransitionProperties from '../../../partials/customizing/transit
 Using xstyled's `styled`, all transition properties defined are automatically bound to `transition-property` attribute:
 
 ```js
-import styled from '@xstyled/...'
+import styled from '@agriffis/xstyled-...'
 
 const Button = styled.button`
   transition-property: default;
@@ -91,7 +91,7 @@ It is possible to manually bind a transition property using `th.transitionProper
 
 ```js
 import styled from '...'
-import { th } from '@xstyled/...'
+import { th } from '@agriffis/xstyled-...'
 
 const Button = styled.button`
   transition: ${th.transitionProperty('default')} 400ms;
@@ -103,7 +103,7 @@ const Button = styled.button`
 Get a transition property in any component using `useTransitionProperty` hook:
 
 ```js
-import { useTransitionProperty } from '@xstyled/...'
+import { useTransitionProperty } from '@agriffis/xstyled-...'
 
 function Button() {
   const transitionProperty = useTransitionProperty('default')

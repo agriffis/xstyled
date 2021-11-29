@@ -76,7 +76,7 @@ import CustomizeLetterSpacings from '../../../partials/customizing/letter-spacin
 Using xstyled's `styled`, all letter spacings defined are automatically bound to `letter-spacing` attribute:
 
 ```js
-import styled from '@xstyled/...'
+import styled from '@agriffis/xstyled-...'
 
 const Title = styled.h4`
   letter-spacing: wide;
@@ -91,7 +91,7 @@ It is possible to manually bind a letter spacing using `th.letterSpacing` utilit
 
 ```js
 import styled from '...'
-import { th } from '@xstyled/system'
+import { th } from '@agriffis/xstyled-system'
 
 const Title = styled.h4`
   letter-spacing: ${th.letterSpacing('wide')};
@@ -103,7 +103,7 @@ const Title = styled.h4`
 Get a font size in any component using `useLetterSpacing` hook:
 
 ```js
-import { useLetterSpacing } from '@xstyled/...'
+import { useLetterSpacing } from '@agriffis/xstyled-...'
 
 function Title() {
   const letterSpacing = useLetterSpacing('wide')

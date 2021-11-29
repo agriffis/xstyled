@@ -348,7 +348,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* re-export everything from @xstyled/system ([a2b6fc8](https://github.com/gregberge/xstyled/commit/a2b6fc81494c42add14b45d5743e2fa7f3a4797f))
+* re-export everything from @agriffis/xstyled-system ([a2b6fc8](https://github.com/gregberge/xstyled/commit/a2b6fc81494c42add14b45d5743e2fa7f3a4797f))
 
 
 
@@ -707,7 +707,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* add @xstyled/prop-types utility ([73782fd](https://github.com/gregberge/xstyled/commit/73782fd)), closes [#23](https://github.com/gregberge/xstyled/issues/23)
+* add @agriffis/xstyled-prop-types utility ([73782fd](https://github.com/gregberge/xstyled/commit/73782fd)), closes [#23](https://github.com/gregberge/xstyled/issues/23)
 
 
 

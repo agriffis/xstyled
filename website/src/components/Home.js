@@ -5,7 +5,7 @@ import {
   x,
   defaultTheme,
   useTheme,
-} from '@xstyled/styled-components'
+} from '@agriffis/xstyled-styled-components'
 import {
   ScreenContainer,
   FeatureSection,

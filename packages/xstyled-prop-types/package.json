@@ -1,0 +1,37 @@
+{
+  "name": "@agriffis/xstyled-prop-types",
+  "description": "Generate prop-types from xstyled utilities.",
+  "version": "3.1.0",
+  "keywords": [
+    "emotion",
+    "styled-components",
+    "css",
+    "system",
+    "styled-system",
+    "prop-types",
+    "tailwindcss"
+  ],
+  "sideEffects": false,
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "author": "Greg Bergé <berge.greg@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "reset": "rm -rf dist",
+    "build": "../../node_modules/.bin/rollup -c ../../build/rollup.config.js",
+    "prepublishOnly": "npm run reset && npm run build"
+  },
+  "homepage": "https://xstyled.dev",
+  "repository": "https://github.com/gregberge/xstyled/tree/master/packages/prop-types",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/gregberge"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.0.0"
+  }
+}

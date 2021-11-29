@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 const React = require('react')
 const Benchmark = require('benchmark')
-const xstyled = require('@xstyled/emotion')
+const xstyled = require('@agriffis/xstyled-emotion')
 const styled = require('@emotion/styled')
 
 const suite = new Benchmark.Suite('emotion')
@@ -38,7 +38,7 @@ function runStyled() {
 
 suite
   .add('@emotion/styled', runStyled)
-  .add('@xstyled/emotion', runXstyled)
+  .add('@agriffis/xstyled-emotion', runXstyled)
   .on('cycle', (event) => {
     console.log(String(event.target))
   })

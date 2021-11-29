@@ -20,14 +20,14 @@ To configure xstyled, create a `xstyled.config.js` file (`.ts` works too) and im
 
 ```js
 // xstyled.config.js
-import { createCss } from '@xstyled/...'
+import { createCss } from '@agriffis/xstyled-...'
 ```
 
 This function accepts a utility (also called generator) and returns a set of functions to style your application.
 
 ```js
 // xstyled.config.js
-import { createCss, system } from '@xstyled/...'
+import { createCss, system } from '@agriffis/xstyled-...'
 
 export const { css, styled, x, createGlobalStyle } = createCss(system)
 ```
@@ -42,7 +42,7 @@ Let's say you want be able to use a new property not already exposed by xstyled,
 
 ```js
 // utilities/border-inline.js
-import { style } from '@xstyled/...'
+import { style } from '@agriffis/xstyled-...'
 
 export const borderInline = style({
   prop: 'borderInline',
@@ -54,7 +54,7 @@ export const borderInline = style({
 `compose` let you compose utilities, by composing `system` you extend the base xstyled. You can also restrict to a smaller set of utilities if you want.
 
 ```js
-import { createCss, system, compose } from '@xstyled/...'
+import { createCss, system, compose } from '@agriffis/xstyled-...'
 import { borderInline } from './utilities/border-inline'
 
 export const { css, styled, x, createGlobalStyle } = createCss(
@@ -71,7 +71,7 @@ By default `prop` defines both the utility prop and the CSS property generated b
 The `css` option let you distinct the prop from the CSS property.
 
 ```js
-import { style } from '@xstyled/...'
+import { style } from '@agriffis/xstyled-...'
 
 export const borderInline = style({
   prop: 'bi',
@@ -87,7 +87,7 @@ export const borderInline = style({
 `prop` accepts a string or an array of strings. It makes it easy to create aliases like `margin` and `m`.
 
 ```js
-import { style } from '@xstyled/...'
+import { style } from '@agriffis/xstyled-...'
 
 export const margin = style({
   prop: ['margin', 'm'],
@@ -106,7 +106,7 @@ export const margin = style({
 If your property is define by a unit or by a primitive, you should bind it to the primitive. To do that, you have to specify `themeGet`:
 
 ```js
-import { style, getColor } from '@xstyled/...'
+import { style, getColor } from '@agriffis/xstyled-...'
 
 export const borderInlineColor = style({
   prop: 'borderInlineColor',
@@ -124,7 +124,7 @@ export const borderInlineColor = style({
 `css` accepts a string or an array of strings. It let you create properties like `px`.
 
 ```js
-import { style } from '@xstyled/...'
+import { style } from '@agriffis/xstyled-...'
 
 export const px = style({
   prop: ['px'],
@@ -137,7 +137,7 @@ export const px = style({
 Specify a function in `css` to define arbitrary style. It makes it easy to create advanced utility like [clearfix](https://stackoverflow.com/questions/8554043/what-is-a-clearfix#:~:text=A%20clearfix%20is%20a%20way,container%20problem%20for%20floated%20elements).
 
 ```js
-import { style } from '@xstyled/...'
+import { style } from '@agriffis/xstyled-...'
 
 export const clearfix = style({
   prop: 'clearfix',

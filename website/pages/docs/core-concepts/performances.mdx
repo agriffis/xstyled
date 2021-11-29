@@ -16,8 +16,8 @@ One of the reason xstyled was created is performance. It was originally a drop-i
 
 xstyled is around ~15kb gzipped including all utilities and all dependencies.
 
-- `@xstyled/styled-components`: 15.4kb gzipped ([see on Bundlephobia](https://bundlephobia.com/result?p=@xstyled/styled-components@2.2.3))
-- `@xstyled/emotion`: 15.7kb gzipped ([see on Bundlephobia](https://bundlephobia.com/result?p=@xstyled/emotion@2.2.3))
+- `@agriffis/xstyled-styled-components`: 15.4kb gzipped ([see on Bundlephobia](https://bundlephobia.com/result?p=@agriffis/xstyled-styled-components@2.2.3))
+- `@agriffis/xstyled-emotion`: 15.7kb gzipped ([see on Bundlephobia](https://bundlephobia.com/result?p=@agriffis/xstyled-emotion@2.2.3))
 
 For ~15kb it includes everything to build an entire website or design system.
 
@@ -47,10 +47,10 @@ Benchmarks are available in [xstyled repository](https://github.com/gregberge/xs
 
 ### xstyled vs styled-system
 
-This benchmark measures the speed of [@xstyled/system](https://www.npmjs.com/package/@xstyled/system) vs [styled-system](https://www.npmjs.com/package/styled-system).
+This benchmark measures the speed of [@agriffis/xstyled-system](https://www.npmjs.com/package/@agriffis/xstyled-system) vs [styled-system](https://www.npmjs.com/package/styled-system).
 
 ```js
-@xstyled/system x 431,828 ops/sec ±1.06% (86 runs sampled)
+@agriffis/xstyled-system x 431,828 ops/sec ±1.06% (86 runs sampled)
 styled-system x 549,224 ops/sec ±0.85% (90 runs sampled)
 Fastest is styled-system
 ```
@@ -71,7 +71,7 @@ This benchmark measures the speed of styled components evaluation. It impacts co
 
 ```js
 styled-components x 45,910 ops/sec ±1.49% (86 runs sampled)
-@xstyled/styled-components x 17,538 ops/sec ±2.10% (87 runs sampled)
+@agriffis/xstyled-styled-components x 17,538 ops/sec ±2.10% (87 runs sampled)
 Fastest is styled-components
 ```
 
@@ -81,8 +81,8 @@ As you can see xstyled is slower. xstyled uses RegExp to detects properties in C
 
 ```js
 styled-components x 1,008,161 ops/sec ±1.24% (86 runs sampled)
-@xstyled/styled-components x 1,009,807 ops/sec ±1.13% (86 runs sampled)
-Fastest is @xstyled/styled-components,styled-components
+@agriffis/xstyled-styled-components x 1,009,807 ops/sec ±1.13% (86 runs sampled)
+Fastest is @agriffis/xstyled-styled-components,styled-components
 ```
 
 xstyled has no impact on rendering.

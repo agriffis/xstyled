@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from '@xstyled/styled-components'
+import styled from '@agriffis/xstyled-styled-components'
 import Prism from 'prismjs/components/prism-core'
 import 'prismjs/themes/prism-dark.css'
 import 'prismjs/components/prism-clike'

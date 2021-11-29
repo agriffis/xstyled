@@ -3,15 +3,15 @@
 </h1>
 <p align="center" style="font-size: 1.2rem;">A utility-first CSS-in-JS framework built for React.</p>
 
-[![License](https://img.shields.io/npm/l/@xstyled/styled-components.svg)](https://github.com/gregberge/xstyled/blob/master/LICENSE)
-[![npm package](https://img.shields.io/npm/v/@xstyled/styled-components/latest.svg)](https://www.npmjs.com/package/@xstyled/styled-components)
-[![npm downloads](https://img.shields.io/npm/dm/@xstyled/styled-components.svg)](https://www.npmjs.com/package/@xstyled/styled-components)
+[![License](https://img.shields.io/npm/l/@agriffis/xstyled-styled-components.svg)](https://github.com/gregberge/xstyled/blob/master/LICENSE)
+[![npm package](https://img.shields.io/npm/v/@agriffis/xstyled-styled-components/latest.svg)](https://www.npmjs.com/package/@agriffis/xstyled-styled-components)
+[![npm downloads](https://img.shields.io/npm/dm/@agriffis/xstyled-styled-components.svg)](https://www.npmjs.com/package/@agriffis/xstyled-styled-components)
 [![CircleCI](https://circleci.com/gh/gregberge/xstyled.svg?style=svg)](https://circleci.com/gh/gregberge/xstyled)
 [![codecov](https://codecov.io/gh/gregberge/xstyled/branch/master/graph/badge.svg)](https://codecov.io/gh/gregberge/xstyled)
 ![Code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
 
 ```bash
-npm install @xstyled/styled-components styled-components
+npm install @agriffis/xstyled-styled-components styled-components
 ```
 
 ## [Docs](https://xstyled.dev)
@@ -26,7 +26,7 @@ Quicklinks to some of the most-visited pages:
 ## Example
 
 ```js
-import { x } from '@xstyled/styled-components'
+import { x } from '@agriffis/xstyled-styled-components'
 
 function Example() {
   return (

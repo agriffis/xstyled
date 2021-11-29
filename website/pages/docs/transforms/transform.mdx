@@ -134,7 +134,7 @@ import CustomizeTransforms from '../../../partials/customizing/transforms.mdx'
 Using xstyled's `styled`, all transformations defined are automatically bound to `transform` attribute:
 
 ```js
-import styled from '@xstyled/...'
+import styled from '@agriffis/xstyled-...'
 
 const Card = styled.h4`
   transform: card;
@@ -149,7 +149,7 @@ It is possible to manually bind a transformation using `th.transform` utility:
 
 ```js
 import styled from '...'
-import { th } from '@xstyled/...'
+import { th } from '@agriffis/xstyled-...'
 
 const Card = styled.h4`
   font: ${th.transform('card')};
@@ -161,7 +161,7 @@ const Card = styled.h4`
 Get a font size in any component using `useTransform` hook:
 
 ```js
-import { useTransform } from '@xstyled/...'
+import { useTransform } from '@agriffis/xstyled-...'
 
 function Card() {
   const transform = useTransform('card')

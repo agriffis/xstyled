@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { x } from '@xstyled/styled-components'
+import { x } from '@agriffis/xstyled-styled-components'
 import { Highlight } from './Prism'
 
 const codes = {

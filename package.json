@@ -6,8 +6,8 @@
     "benchmarks"
   ],
   "scripts": {
-    "build": "lerna run build --ignore @xstyled/website --ignore @xstyled/benchmarks",
-    "reset": "lerna run reset --ignore @xstyled/website --ignore @xstyled/benchmarks",
+    "build": "lerna run build --ignore @agriffis/xstyled-website --ignore @agriffis/xstyled-benchmarks",
+    "reset": "lerna run reset --ignore @agriffis/xstyled-website --ignore @agriffis/xstyled-benchmarks",
     "format": "prettier --write \"**/*.{js,ts,tsx,json,md,mdx}\"",
     "lint": "eslint .",
     "release": "lerna publish --conventional-commits && conventional-github-releaser --preset angular",

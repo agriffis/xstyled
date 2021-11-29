@@ -121,7 +121,7 @@ import CustomizeLineHeights from '../../../partials/customizing/line-heights.mdx
 Using xstyled's `styled`, all line heights defined are automatically bound to `line-height` attribute:
 
 ```js
-import styled from '@xstyled/...'
+import styled from '@agriffis/xstyled-...'
 
 const Title = styled.h4`
   line-height: loose;
@@ -136,7 +136,7 @@ It is possible to manually bind a line height using `th.lineHeight` utility:
 
 ```js
 import styled from '...'
-import { th } from '@xstyled/...'
+import { th } from '@agriffis/xstyled-...'
 
 const Title = styled.h4`
   font: arial 10px / ${th.lineHeight('loose')};
@@ -148,7 +148,7 @@ const Title = styled.h4`
 Get a font size in any component using `useLineHeight` hook:
 
 ```js
-import { useLineHeight } from '@xstyled/...'
+import { useLineHeight } from '@agriffis/xstyled-...'
 
 function Title() {
   const lineHeight = useLineHeight('loose')

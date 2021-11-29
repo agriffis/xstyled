@@ -113,7 +113,7 @@ import CustomizeTransitionProperties from '../../../partials/customizing/transit
 Using xstyled's `styled`, all timing functions defined are automatically bound to `transition-timing-function` attribute:
 
 ```js
-import styled from '@xstyled/...'
+import styled from '@agriffis/xstyled-...'
 
 const Button = styled.button`
   transition-timing-function: ease-in;
@@ -128,7 +128,7 @@ It is possible to manually bind a timing function using `th.timingFunction` util
 
 ```js
 import styled from '...'
-import { th } from '@xstyled/...'
+import { th } from '@agriffis/xstyled-...'
 
 const Button = styled.button`
   transition: color ${th.timingFunction('ease-in')} 150ms;
@@ -140,7 +140,7 @@ const Button = styled.button`
 Get a timing function in any component using `useTimingFunction` hook:
 
 ```js
-import { useTimingFunction } from '@xstyled/...'
+import { useTimingFunction } from '@agriffis/xstyled-...'
 
 function Button() {
   const timingFunction = useTimingFunction('ease-in')

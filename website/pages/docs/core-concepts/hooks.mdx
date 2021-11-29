@@ -20,7 +20,7 @@ xstyled includes powerful Hooks to make it easy to use utilities outside `x` or 
 Get the current theme.
 
 ```js
-import { useTheme } from '@xstyled/...'
+import { useTheme } from '@agriffis/xstyled-...'
 
 function Example() {
   const theme = useTheme()
@@ -33,7 +33,7 @@ function Example() {
 Get a value from theme.
 
 ```js
-import { useTh } from '@xstyled/...'
+import { useTh } from '@agriffis/xstyled-...'
 
 function Example() {
   const primary = useTh('colors.primary')
@@ -46,7 +46,7 @@ function Example() {
 All theme getters have their own hooks, for example, get a color using `useColor`:
 
 ```js
-import { useColor } from '@xstyled/...'
+import { useColor } from '@agriffis/xstyled-...'
 
 function Example() {
   const primary = useColor('primary')
@@ -86,7 +86,7 @@ function Example() {
 Return breakpoints defined in the theme (or the default breakpoints).
 
 ```js
-import { useBreakpoints } from '@xstyled/...'
+import { useBreakpoints } from '@agriffis/xstyled-...'
 
 function Example() {
   const breakpoints = useBreakpoints()
@@ -99,7 +99,7 @@ function Example() {
 Return the width of the viewport.
 
 ```js
-import { useViewportWidth } from '@xstyled/...'
+import { useViewportWidth } from '@agriffis/xstyled-...'
 
 function Example() {
   const width = useViewportWidth()
@@ -112,7 +112,7 @@ function Example() {
 Return the current breakpoint (based on viewport width).
 
 ```js
-import { useBreakpoint } from '@xstyled/...'
+import { useBreakpoint } from '@agriffis/xstyled-...'
 
 function Example() {
   const breakpoint = useBreakpoint()
@@ -125,7 +125,7 @@ function Example() {
 Return true if the viewport width is greater than the specified breakpoint.
 
 ```js
-import { useUp } from '@xstyled/...'
+import { useUp } from '@agriffis/xstyled-...'
 
 function Example() {
   const upMd = useUp('md')
@@ -138,7 +138,7 @@ function Example() {
 Return true if the viewport width is lower than the specified breakpoint.
 
 ```js
-import { useDown } from '@xstyled/...'
+import { useDown } from '@agriffis/xstyled-...'
 
 function Example() {
   const downMd = useDown('md')

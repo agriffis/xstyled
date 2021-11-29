@@ -1,0 +1,33 @@
+{
+  "name": "@agriffis/xstyled-babel-preset-emotion-css-prop",
+  "description": "A babel preset to automatically enable emotion's css prop with xstyled.",
+  "version": "3.1.0",
+  "sideEffects": false,
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.js",
+  "author": "Greg Bergé <berge.greg@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "reset": "rm -rf dist",
+    "build": "../../node_modules/.bin/rollup -c ../../build/rollup.config.js",
+    "prepublishOnly": "npm run reset && npm run build"
+  },
+  "homepage": "https://xstyled.dev",
+  "repository": "https://github.com/gregberge/xstyled/tree/master/packages/babel-preset-emotion-css-prop",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/gregberge"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.14.9",
+    "@emotion/babel-plugin": "^11.3.0",
+    "@emotion/babel-plugin-jsx-pragmatic": "^0.1.5"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0"
+  }
+}

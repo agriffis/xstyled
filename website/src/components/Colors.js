@@ -1,5 +1,5 @@
 import React from 'react'
-import { x, defaultTheme, ThemeProvider } from '@xstyled/styled-components'
+import { x, defaultTheme, ThemeProvider } from '@agriffis/xstyled-styled-components'
 
 function Color({ color, intensity }) {
   return (

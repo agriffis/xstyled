@@ -131,7 +131,7 @@ const defaultTheme = {
 Using xstyled's `styled`, all shadows defined are automatically bound to `box-shadow` attribute:
 
 ```js
-import styled from '@xstyled/...'
+import styled from '@agriffis/xstyled-...'
 
 const Button = styled.button`
   box-shadow: lg;
@@ -146,7 +146,7 @@ It is possible to manually bind a shadow property using `th.shadow` utility:
 
 ```js
 import styled from '...'
-import { th } from '@xstyled/...'
+import { th } from '@agriffis/xstyled-...'
 
 const Button = styled.button`
   shadow: ${th.shadow('lg')};
@@ -158,7 +158,7 @@ const Button = styled.button`
 Get a shadow property in any component using `useShadow` hook:
 
 ```js
-import { useShadow } from '@xstyled/...'
+import { useShadow } from '@agriffis/xstyled-...'
 
 function Button() {
   const shadow = useShadow('lg')

@@ -115,7 +115,7 @@ To use custom web fonts, you have to load them in global using external CSS file
 Using xstyled's `styled`, all font families defined are automatically bound to `font-family` attribute:
 
 ```js
-import styled from '@xstyled/...'
+import styled from '@agriffis/xstyled-...'
 
 const Title = styled.h4`
   font-family: sans;
@@ -130,7 +130,7 @@ It is possible to manually bind a font size using `th.font` utility:
 
 ```js
 import styled from '...'
-import { th } from '@xstyled/...'
+import { th } from '@agriffis/xstyled-...'
 
 const Title = styled.h4`
   font: ${th.font('sans')};
@@ -142,7 +142,7 @@ const Title = styled.h4`
 Get a font size in any component using `useFont` hook:
 
 ```js
-import { useFont } from '@xstyled/...'
+import { useFont } from '@agriffis/xstyled-...'
 
 function Title() {
   const font = useFont('sans')

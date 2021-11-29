@@ -1,4 +1,4 @@
-import { css } from '@xstyled/styled-components'
+import { css } from '@agriffis/xstyled-styled-components'
 import { theme as baseTheme, primaryColor } from 'smooth-doc/src/theme'
 import deepmerge from 'deepmerge'
 import '../components/styles/flow-font.css'

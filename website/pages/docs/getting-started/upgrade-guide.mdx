@@ -50,7 +50,7 @@ Learn more in [states documentation](/docs/hover-focus-other-states/).
 xstyled can now be fully extended with plugins using a `xstyled.config.js`:
 
 ```js
-import { createCss, system, compose } from '@xstyled/...'
+import { createCss, system, compose } from '@agriffis/xstyled-...'
 import { borderInline } from './utilities/border-inline'
 
 export const { css, styled, x, createGlobalStyle } = createCss(
@@ -127,7 +127,7 @@ We know that xstyled is in the core of your project and that the migration could
 xstyled exposes `x` namespace to easily create declarative components and style your website without writing CSS. The new version push this approach at the edge. The v2 still supports magic styled components, they are even better than before!
 
 ```js
-import { x } from '@xstyled/...'
+import { x } from '@agriffis/xstyled-...'
 
 function Button() {
   return (
@@ -247,7 +247,7 @@ Migrate them to `screens`:
 Add `variant` utility in your codebase:
 
 ```js
-import { getThemeValue, merge, warn, is, assign } from '@xstyled/util'
+import { getThemeValue, merge, warn, is, assign } from '@agriffis/xstyled-util'
 
 const variant =
   ({ key = null, default: defaultValue, variants = {}, prop = 'variant' }) =>

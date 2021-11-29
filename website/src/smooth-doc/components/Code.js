@@ -7,7 +7,7 @@ import styled, {
   x,
   ThemeProvider,
   defaultTheme,
-} from '@xstyled/styled-components'
+} from '@agriffis/xstyled-styled-components'
 import Editor from 'react-simple-code-editor'
 import { LiveProvider, LiveError, LivePreview, LiveContext } from 'react-live'
 import { mdx } from '@mdx-js/react'

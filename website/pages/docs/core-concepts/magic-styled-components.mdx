@@ -18,7 +18,7 @@ xstyled's exposes a `styled` utilities similar to the one you have in styled-com
 Automatic Theming allows you to specify theme value as CSS value.
 
 ```js
-import styled from '@xstyled/...'
+import styled from '@agriffis/xstyled-...'
 
 const Button = styled.button`
   border-radius: md;
@@ -48,7 +48,7 @@ Here's how the example above works:
 The `as` prop let you replace the component originally defined:
 
 ```js
-import styled from '@xstyled/...'
+import styled from '@agriffis/xstyled-...'
 
 const Button = styled.button`
   border-radius: md;
@@ -82,7 +82,7 @@ For that purpose, xstyled exports a `th` utility that let you get values from th
 `th` exposes all utilities to directly get the type of property you need:
 
 ```js
-import { th } from '@xstyled/...'
+import { th } from '@agriffis/xstyled-...'
 
 const Container = styled.div`
   box-shadow: 0 0 3px ${th.color('primary', '#000')};
@@ -94,7 +94,7 @@ The example above reads `theme.colors.primary` and use `#000` as default value i
 ### Get arbitrary value
 
 ```js
-import { th } from '@xstyled/...'
+import { th } from '@agriffis/xstyled-...'
 
 const Container = styled.div`
   box-shadow: 0 0 3px ${th('primaryColor', '#000')};
@@ -134,7 +134,7 @@ All available theme getters are automatically bound to a theme section and to CS
 Sometimes it is convenient to mix styled components and utility props. It is possible to do it by adding a `Box` suffix to `styled.tag`. Using `styled.buttonBox` instead of `styled.button` let you use any props utilities on the component:
 
 ```js
-import styled from '@xstyled/...'
+import styled from '@agriffis/xstyled-...'
 
 const Button = styled.buttonBox`
   border-radius: md;
@@ -152,7 +152,7 @@ function App() {
 It is possible to explicitly add utility props by using `system` or any utility as interpolation:
 
 ```js
-import { system, typography } from '@xstyled/styled-components'
+import { system, typography } from '@agriffis/xstyled-styled-components'
 import styled from 'styled-components'
 
 const Button = styled.div`
@@ -178,7 +178,7 @@ function App() {
 Some utilities like `ring` can't be used in styled components. The `apply` method available on each utility or utilities family allows you to apply style directly on your styled components:
 
 ```js
-import styled, { system } from '@xstyled/...'
+import styled, { system } from '@agriffis/xstyled-...'
 
 const Button = styled.buttonBox`
   border-radius: md;
@@ -206,7 +206,7 @@ function App() {
 `breakpoints` lets you write style for each breakpoint.
 
 ```js
-import { breakpoints } from '@xstyled/...'
+import { breakpoints } from '@agriffis/xstyled-...'
 
 const Container = styled.div`
   ${breakpoints({
@@ -228,7 +228,7 @@ const Container = styled.div`
 `up` lets you apply style from a breakpoint.
 
 ```js
-import styled, { css, up } from '@xstyled/...'
+import styled, { css, up } from '@agriffis/xstyled-...'
 
 const Box = styled.div`
   width: 200px;
@@ -247,7 +247,7 @@ const Box = styled.div`
 `down` lets you apply style up to a breakpoint.
 
 ```js
-import styled, { css, down } from '@xstyled/...'
+import styled, { css, down } from '@agriffis/xstyled-...'
 
 const Box = styled.div`
   width: 200px;
@@ -266,7 +266,7 @@ const Box = styled.div`
 `between` lets you apply style between two breakpoints.
 
 ```js
-import styled, { css, between } from '@xstyled/...'
+import styled, { css, between } from '@agriffis/xstyled-...'
 
 const Box = styled.div`
   width: 200px;
@@ -290,7 +290,7 @@ For the magic to work, you must follow rules. If you don't follow them, automati
 CSS as object already does magic on your properties, for example a `margin` is automatically converted in `px`. To avoid any problem of migration, xstyled magic only applies on string properties.
 
 ```js
-import styled from '@xstyled/...'
+import styled from '@agriffis/xstyled-...'
 
 const Box = styled.div({
   margin: 2, // '2px' (not transformed by xstyled)
@@ -305,7 +305,7 @@ With xstyled, you need to explicitly transforms your CSS using `css` utility:
 **🚫 Not supported**
 
 ```js
-import styled, { css } from '@xstyled/...'
+import styled, { css } from '@agriffis/xstyled-...'
 
 const Box = styled.div`
   ${(p) => ({ margin: p.margin })}
@@ -315,7 +315,7 @@ const Box = styled.div`
 **✅ Supported**
 
 ```js
-import styled, { css } from '@xstyled/...'
+import styled, { css } from '@agriffis/xstyled-...'
 
 const Box = styled.div`
   ${(p) => css({ margin: p.margin })}
@@ -329,7 +329,7 @@ xstyled analyze strings generated from `css` or `styled` and detects `prop: valu
 **🚫 Not supported**
 
 ```js
-import styled from '@xstyled/...'
+import styled from '@agriffis/xstyled-...'
 
 const Box = styled.div`
   margin: ${(p) => p.margin};
