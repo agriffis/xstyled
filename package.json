@@ -10,7 +10,7 @@
     "reset": "lerna run reset --ignore @agriffis/xstyled-website --ignore @agriffis/xstyled-benchmarks",
     "format": "prettier --write \"**/*.{js,ts,tsx,json,md,mdx}\"",
     "lint": "eslint .",
-    "release": "lerna publish --conventional-commits && conventional-github-releaser --preset angular",
+    "release": "lerna publish prepatch --preid agriffis",
     "test": "jest"
   },
   "devDependencies": {
