@@ -502,8 +502,6 @@ export const defaultTheme = {
   },
   states: {
     _: null,
-    motionSafe: '@media (prefers-reduced-motion: no-preference)',
-    motionReduce: '@media (prefers-reduced-motion: reduce)',
     first: '&:first-child',
     last: '&:last-child',
     odd: '&:odd',
@@ -517,6 +515,8 @@ export const defaultTheme = {
     active: '&:active',
     disabled: '&:disabled, &[aria-disabled=true]',
     placeholder: '&::placeholder',
+    motionSafe: '@media (prefers-reduced-motion: no-preference)',
+    motionReduce: '@media (prefers-reduced-motion: reduce)',
   },
 }
 

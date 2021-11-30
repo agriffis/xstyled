@@ -2,7 +2,7 @@ import { Props, Path } from './types'
 
 export * from './types'
 
-const DEV = process.env.NODE_ENV !== 'production'
+export const DEV = process.env.NODE_ENV !== 'production'
 
 const specialProperties = ['__proto__', 'constructor', 'prototype'];
 /**
@@ -100,9 +100,13 @@ export const merge = <T, U>(target: T, source: U): T & U => {
 /**
  * Warn if a condition is not met.
  */
-export const warn = (condition: boolean, message: string): void => {
-  if (DEV) {
-    if (!condition && console.error) {
+export function warn(condition: boolean, message: string): void
+export function warn(message: string): void
+export function warn(condition: any, message?: string) {
+  if (DEV && console.error) {
+    if (typeof condition === 'string') {
+      console.error(condition)
+    } else if (!condition) {
       console.error(message)
     }
   }
