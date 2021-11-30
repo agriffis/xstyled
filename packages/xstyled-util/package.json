@@ -1,7 +1,7 @@
 {
   "name": "@agriffis/xstyled-util",
   "description": "xstyled common utilities.",
-  "version": "3.1.3-agriffis.0",
+  "version": "3.1.3-agriffis.1",
   "sideEffects": false,
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
