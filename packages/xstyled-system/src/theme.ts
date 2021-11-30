@@ -1,7 +1,7 @@
 import { Screens, States, Props } from './types'
 import { mediaMinWidth, getBreakpointMin } from './media'
 import { XCache } from './cache'
-import { DEV, warn } from '@xstyled/util'
+import { DEV, warn } from '@agriffis/xstyled-util'
 
 type PropsScreens<T extends Props> = T['theme'] extends { screens: Screens }
   ? T['theme']['screens']
